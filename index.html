@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap" rel="stylesheet">
+
+    <title>Rakesh Saha</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lobster', cursive;
+            letter-spacing: 3px;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #00c990;
+        }
+        .heading {
+            color: #000;
+        }
+        .inputbox {
+            border-radius: 10px;
+            border: 1px solid #00c990;
+            background-color: #fffafc;
+            color: #000;
+        }
+        .button {
+            background-color: #00c990;
+            color: #fff;
+            border-radius: 10px;
+        }
+        .button:hover {
+            color: #fff;
+            background-color: #02a577;
+        }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L24,266.7C48,277,96,299,144,277.3C192,256,240,192,288,149.3C336,107,384,85,432,74.7C480,64,528,64,576,90.7C624,117,672,171,720,186.7C768,203,816,181,864,165.3C912,149,960,139,1008,154.7C1056,171,1104,213,1152,234.7C1200,256,1248,256,1296,240C1344,224,1392,192,1416,176L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+
+    <div class="container" style="margin-top: -340px;">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading pb-3">Loan Calculator</h1>
+                    <!-- loan form -->
+                    <form action="" id="loan-form">
+                        <div class="form-group">
+                            <input type="number" id="amount" class="form-control inputbox" placeholder="Loan Amount">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="interest" class="form-control inputbox" placeholder="Interest">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="years" class="form-control inputbox" placeholder="Years To Pay">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Calculate" class="btn btn-block button">
+                        </div>
+                    </form>
+                    <!-- result show -->
+                    <div id="results">
+                        <div class="form-group">
+                            <input type="number" id="monthly-payment" class="form-control" placeholder="Monthly Payment" disabled>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="total-payment" class="form-control" placeholder="Total Payment" disabled>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="total-interest" class="form-control" placeholder="Total Interest" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-top: -160px;"><path fill="#fff" fill-opacity="1" d="M0,256L24,266.7C48,277,96,299,144,277.3C192,256,240,192,288,149.3C336,107,384,85,432,74.7C480,64,528,64,576,90.7C624,117,672,171,720,186.7C768,203,816,181,864,165.3C912,149,960,139,1008,154.7C1056,171,1104,213,1152,234.7C1200,256,1248,256,1296,240C1344,224,1392,192,1416,176L1440,160L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+    
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="app.js"></script>
+  </body>
+</html>
